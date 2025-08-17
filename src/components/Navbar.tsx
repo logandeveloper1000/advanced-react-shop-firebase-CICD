@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <header className="navbar">
       <div className="container nav-inner">
-        <Link to="/" className="brand">Advanced React Shop Firebase</Link>
+        <Link to="/" className="brand">Advanced React Shop Firebase CI/CD</Link>
 
         {/* Burger */}
         <button

@@ -67,6 +67,18 @@ src/
 
 ---
 
+## Live Demo
+Production (Vercel): https://advanced-react-shop-firebase-cicd-du543tu75.vercel.app/
+
+## CI/CD
+- CI: GitHub Actions runs `npm test` (Jest + RTL) and `npm run build` on every push/PR to `main`.
+- CD: On push to `main`, if CI passes, GitHub Actions deploys to Vercel via CLI (`vercel pull → vercel build --prod → vercel deploy --prebuilt --prod`).
+
+## Tests
+- Unit: `CategorySelect` (renders & onChange), `ProductCard` (renders & add callback).
+- Integration: `Home` page — clicking **Add to Cart** updates Redux `cart` store.
+
+
 ## Data Model
 
 ### Product (stored in `productsAdvancedReactShop`)
